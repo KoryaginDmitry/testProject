@@ -23,7 +23,7 @@ class ContactsController extends Controller
      * @param FeedbackRequest $request
      * @return JsonResponse
      */
-    public function create(FeedbackRequest $request): JsonResponse
+    public function createFeedback(FeedbackRequest $request): JsonResponse
     {
         Feedback::create($request->validated());
 

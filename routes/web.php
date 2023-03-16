@@ -25,4 +25,4 @@ Route::get('/states', [StateController::class, 'list'])->name('states');
 Route::get('/states/{state:slug}', [StateController::class, 'state'])->name('state');
 
 Route::get('/contacts', [ContactsController::class, 'view'])->name('contacts');
-Route::post('/contacts/create', [ContactsController::class, 'create'])->name('contacts.create');
+Route::post('/contacts/create', [ContactsController::class, 'createFeedback'])->name('contacts.create');
