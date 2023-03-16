@@ -1,7 +1,6 @@
 import './bootstrap';
-import '/node_modules/jquery/dist/jquery.js';
 
-$('#feedbackForm').on('submit', (e) => {
+$('.form').on('submit', (e) => {
     e.preventDefault();
 
     let form = e.target;
