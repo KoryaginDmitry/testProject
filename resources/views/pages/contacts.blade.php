@@ -11,7 +11,7 @@
     </div>
 
     <div class="container mb-3">
-        <form action="{{ route('contacts.create') }}" method="post" id="feedbackForm">
+        <form action="{{ route('contacts.create') }}" method="post" class="form">
             <legend>Форма обратной связи</legend>
             <div class="container">
                 <div id="message"></div>
@@ -21,7 +21,7 @@
             <x-input type="email" text="Почта" name="email"></x-input>
             <x-input type="text" text="Комментарий" name="comment"></x-input>
 
-            <button type="submit" class="btn btn-primary">Отправить обращение</button>
+            <input type="submit" class="btn btn-primary" value="Отправить обращение">
         </form>
     </div>
 @endsection
